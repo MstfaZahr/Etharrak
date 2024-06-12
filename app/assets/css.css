@@ -1,3 +1,7 @@
+:root {
+  --plyr-color-main: hsl(182, 67%, 50%);
+}
+
 .light {
   --primary: hsl(182, 67%, 76%);
   /* --secondary: rgba(51, 94, 234, 0.1); */
@@ -299,7 +303,6 @@ body {
 }
 
 #stories p {
-  margin-bottom: unset;
   font-weight: 100;
 }
 
@@ -382,6 +385,10 @@ body {
   #stories .information p {
     font-size: 17px;
   }
+
+  #stories .stories {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 991px) {
@@ -424,12 +431,6 @@ body {
 
   #find-us .col-lg:hover h6 {
     transform: unset;
-  }
-
-  /* Stories */
-
-  #stories .stories {
-    grid-template-columns: repeat(2, 1fr);
   }
 }
 
