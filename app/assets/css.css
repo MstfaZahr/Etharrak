@@ -115,6 +115,7 @@ body {
 #nav a {
   text-decoration: unset;
   color: unset;
+  transition: color 0.2s;
 }
 
 #nav a:hover {
