@@ -4,7 +4,7 @@
 
 .light {
   --primary: hsl(182, 67%, 76%);
-  /* --secondary: rgba(51, 94, 234, 0.1); */
+  --secondary: hsl(357, 91%, 46%);
   --info: hsl(182, 67%, 50%);
   --success: hsl(48, 100%, 50%);
   --text-primary: black;
@@ -15,7 +15,7 @@
 }
 
 .dark {
-  /* --secondary: rgba(51, 94, 234, 0.1); */
+  --secondary: hsl(357, 91%, 46%);
   --primary: hsl(182, 67%, 76%);
   --info: hsl(182, 67%, 76%);
   --success: hsl(48, 100%, 50%);
@@ -327,6 +327,61 @@ body {
   background-color: hsl(48, 100%, 45%);
 }
 
+/* Modal */
+
+#modal .modal-content {
+  background-color: var(--text-opposite);
+  box-shadow: 0px 0px 20px 0px var(--shadow);
+}
+
+#modal .modal-body {
+  display: grid;
+  grid-template-columns: 40px 3fr 2fr;
+  grid-template-rows: repeat(4, 50px);
+  text-align: center;
+  padding: unset;
+}
+
+#modal h1 {
+  color: var(--secondary);
+  font-family: "Alexandria";
+  font-size: 35px;
+  font-weight: 600;
+}
+#modal svg {
+  place-self: center;
+}
+
+#modal p {
+  margin-bottom: unset;
+  align-content: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#modal .num {
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+#modal button {
+  width: 150px;
+  height: 50px;
+  align-self: center;
+  background-color: hsl(357, 70%, 50%);
+  color: white;
+}
+
+#modal button:hover {
+  background-color: var(--secondary);
+}
+
+#modal a {
+  color: unset;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 2px;
+}
+
 /* Footer */
 
 #footer .container-fluid {
@@ -369,6 +424,12 @@ body {
 #footer .social .col {
   max-width: 50px;
   max-height: 50px;
+}
+
+#footer a {
+  color: unset;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 2px;
 }
 
 /* Rsponsive Design */
@@ -483,6 +544,15 @@ body {
 }
 
 @media (max-width: 575px) {
+  /* Modal */
+  #modal p {
+    font-size: 15px;
+  }
+
+  #modal a {
+    text-decoration-thickness: 1px;
+  }
+
   /* Footer */
 
   #footer .logo {
